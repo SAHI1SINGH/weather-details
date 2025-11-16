@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylee.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 class="app-title">Weather App</h1>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Enter city name (e.g. Patna)"
+        autocomplete="off"
+      />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <p id="message" class="message"></p>
+
+    <div id="weather-card" class="weather-card hidden">
+      <h2 id="city-name" class="city-name"></h2>
+      <div class="weather-main">
+        <div class="temp-block">
+          <span id="temperature" class="temperature"></span>
+          <span class="unit">°C</span>
+        </div>
+        <p id="description" class="description"></p>
+      </div>
+
+      <div class="extra-info">
+        <div class="info-item">
+          <span>Humidity</span>
+          <strong id="humidity"></strong>
+        </div>
+        <div class="info-item">
+          <span>Wind</span>
+          <strong id="wind"></strong>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <small>Built with HTML, CSS & JavaScript</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
